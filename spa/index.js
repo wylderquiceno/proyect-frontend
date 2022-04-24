@@ -20,6 +20,13 @@ fetch('home.html')
     });
 
 let Index = " "
+fetch('index.html')
+    .then(res => res.text())
+    .then(content => {
+
+        Index = content
+    });
+
 let page = document.getElementById("html")
 console.log(page)
 
